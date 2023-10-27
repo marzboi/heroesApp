@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Do you wish to continue?</h1>
+<div mat-dialog-content>
+  <p>Once data is deleted there is no way to get it back, do you wish to delete {{data.superhero}}.</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <span class="spacer"></span>
+  <button mat-button color="primary" (click)="onConfirm()" cdkFocusInitial>Ok</button>
+</div>
